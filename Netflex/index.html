@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+    integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous" />
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
+    integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous" />
+
+  <link rel="stylesheet" href="style.css">
+  <title>Netflex Clone</title>
+</head>
+
+<body>
+  <main>
+    <!--**************** NAVBAR SECTION ****************-->
+    <nav class="navbar navbar-expand-lg">
+      <a class="navbar-brand" href="./index.html"><img class="logo img-fluid" src="\assets\netflix-logo.png" /></a>
+      <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId"
+        aria-controls="collapsibleNavId" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="collapsibleNavId">
+        <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link mx-1" href="#">TV Shows</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link mx-1" href="#">Movies</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link mx-1" href="#">Recently Added</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link mx-1" href="#">My List</a>
+          </li>
+        </ul>
+        <div id="search-bar" class="d-none">
+          <i class="fas fa-search fa-search-input"></i>
+          <input type="text" id="search-input" placeholder="Titles, people, genre" />
+        </div>
+        <li id="search-pre" class="nav-item search-icon d-flex">
+          <a class="nav-link mx-1 px-2" href="#"><i class="fas fa-search"></i>
+          </a>
+        </li>
+        <div class="my-2 my-lg-0 mr-2 dropdown-container">
+          <li class="nav-item d-inline-block">
+            <p id="username" class="offWhiteTxt ml-3 my-auto d-inline-block">
+              KIDS
+            </p>
+            <a class="nav-link mx-1 px-2 d-inline-block" href="#"><i class="fas fa-bell"></i>
+            </a>
+          </li>
+          <li class="nav-item dropdown d-inline-block">
+            <a class="nav-link dropdown-toggle pl-0" href="#" id="dropdownId" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false"><img class="logo img-fluid ml-1 mr-1"
+                src="\assets\striveschool-logo.png" /></a>
+            <div class="dropdown-menu" aria-labelledby="dropdownId">
+              <a class="dropdown-item pb-1 nav-border-b pl-3" href="./Profile.html">Manage Profiles</a>
+              <a class="dropdown-item font-weight-bold pb-1 pl-3" href="./account.html">Account</a>
+              <a class="dropdown-item font-weight-bold pb-1 pl-3" href="#">Help Centre</a>
+              <a class="dropdown-item font-weight-bold pb-1 pl-3" href="#">Sign out of Netflix</a>
+            </div>
+          </li>
+        </div>
+      </div>
+    </nav>
+    <!-- =======================TV Shows==================== -->
+    <section class="d-flex mt-5 ">
+      <div class="d-flex">
+        <h1 class="font-weight-bolder">TV Shows </h1>
+        <div class="dropdown">
+          <span class="border p-1 ml-4 mt-2 px-3 dropdown-toggle" type="button" id="dropdownMenu2"
+            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Genres
+          </span>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+            <button class="dropdown-item" type="button">Dram</button>
+            <button class="dropdown-item" type="button">Science fiction </button>
+            <button class="dropdown-item" type="button">Action</button>
+          </div>
+        </div>
+      </div>
+      <div class="ml-auto d-flex">
+        <div class="border h-50 px-3 mt-3">
+          <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-border-width" fill="currentColor"
+            xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M0 3.5A.5.5 0 0 1 .5 3h15a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-.5.5H.5a.5.5 0 0 1-.5-.5v-2zm0 5A.5.5 0 0 1 .5 8h15a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5H.5a.5.5 0 0 1-.5-.5v-1zm0 4a.5.5 0 0 1 .5-.5h15a.5.5 0 0 1 0 1H.5a.5.5 0 0 1-.5-.5z" />
+          </svg>
+        </div>
+        <div class="border h-50 px-3 mt-3">
+          <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-ui-radios-grid" fill="currentColor"
+            xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd"
+              d="M3.5 15a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5zm9-9a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5zm0 9a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5zM16 3.5a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0zm-9 9a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0zm5.5 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7zm-9-11a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3zm0 2a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7z" />
+          </svg>
+        </div>
+      </div>
+    </section>
+    <!-- ==================Trending Now============================ -->
+    <section class="mt-4 movie-section">
+      <h2 class="font-weight-bolder">Trending Now</h2>
+      <div class="d-flex img-row mt-3">
+        <div class="h-100 img-wrapper">
+          <img class="h-100 rounded shadow-sm"
+            src="https://images.pexels.com/photos/436413/pexels-photo-436413.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+            alt="img">
+        </div>
+        <div class="h-100 img-wrapper ml-1">
+          <img class="h-100 rounded"
+            src="https://images.pexels.com/photos/436413/pexels-photo-436413.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+            alt="img">
+        </div>
+        <div class="h-100 img-wrapper ml-1">
+          <img class="h-100 rounded"
+            src="https://images.pexels.com/photos/436413/pexels-photo-436413.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+            alt="img">
+        </div>
+        <div class="h-100 img-wrapper ml-1">
+          <img class="h-100 rounded"
+            src="https://images.pexels.com/photos/436413/pexels-photo-436413.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+            alt="img">
+        </div>
+        <div class="h-100 img-wrapper ml-1">
+          <img class="h-100 rounded"
+            src="https://images.pexels.com/photos/436413/pexels-photo-436413.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+            alt="img">
+        </div>
+        <div class="h-100 img-wrapper ml-1">
+          <img class="h-100 rounded"
+            src="https://images.pexels.com/photos/436413/pexels-photo-436413.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+            alt="img">
+        </div>
+        <div class="h-100 img-wrapper ml-1">
+          <img class="h-100 rounded"
+            src="https://images.pexels.com/photos/436413/pexels-photo-436413.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+            alt="img">
+        </div>
+      </div>
+      <div class="next">
+        <i class="fas fa-chevron-right"></i>
+      </div>
+    </section>
+
+    <!-- ====================Watch It Again ===================== -->
+    <section class="mt-4 movie-section ">
+      <h2 class="font-weight-bolder">Watch It Again</h2>
+      <div class="d-flex img-row mt-3">
+        <div class="h-100 img-wrapper">
+          <img class="h-100 rounded shadow-sm"
+            src="https://images.pexels.com/photos/436413/pexels-photo-436413.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+            alt="img">
+        </div>
+        <div class="h-100 img-wrapper ml-1">
+          <img class="h-100 rounded"
+            src="https://images.pexels.com/photos/436413/pexels-photo-436413.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+            alt="img">
+        </div>
+        <div class="h-100 img-wrapper ml-1">
+          <img class="h-100 rounded"
+            src="https://images.pexels.com/photos/436413/pexels-photo-436413.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+            alt="img">
+        </div>
+        <div class="h-100 img-wrapper ml-1">
+          <img class="h-100 rounded"
+            src="https://images.pexels.com/photos/436413/pexels-photo-436413.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+            alt="img">
+        </div>
+        <div class="h-100 img-wrapper ml-1">
+          <img class="h-100 rounded"
+            src="https://images.pexels.com/photos/436413/pexels-photo-436413.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+            alt="img">
+        </div>
+        <div class="h-100 img-wrapper ml-1">
+          <img class="h-100 rounded"
+            src="https://images.pexels.com/photos/436413/pexels-photo-436413.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+            alt="img">
+        </div>
+        <div class="h-100 img-wrapper ml-1">
+          <img class="h-100 rounded"
+            src="https://images.pexels.com/photos/436413/pexels-photo-436413.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+            alt="img">
+        </div>
+      </div>
+      <div class="next">
+        <i class="fas fa-chevron-right"></i>
+      </div>
+    </section>
+
+    <!-- ========================New Releases================= -->
+    <section class="mt-4 movie-section ">
+      <h2 class="font-weight-bolder">New Releases</h2>
+      <div class="d-flex img-row mt-3">
+        <div class="h-100 img-wrapper">
+          <img class="h-100 rounded shadow-sm"
+            src="https://images.pexels.com/photos/436413/pexels-photo-436413.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+            alt="img">
+        </div>
+        <div class="h-100 img-wrapper ml-1">
+          <img class="h-100 rounded"
+            src="https://images.pexels.com/photos/436413/pexels-photo-436413.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+            alt="img">
+        </div>
+        <div class="h-100 img-wrapper ml-1">
+          <img class="h-100 rounded"
+            src="https://images.pexels.com/photos/436413/pexels-photo-436413.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+            alt="img">
+        </div>
+        <div class="h-100 img-wrapper ml-1">
+          <img class="h-100 rounded"
+            src="https://images.pexels.com/photos/436413/pexels-photo-436413.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+            alt="img">
+        </div>
+        <div class="h-100 img-wrapper ml-1">
+          <img class="h-100 rounded"
+            src="https://images.pexels.com/photos/436413/pexels-photo-436413.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+            alt="img">
+        </div>
+        <div class="h-100 img-wrapper ml-1">
+          <img class="h-100 rounded"
+            src="https://images.pexels.com/photos/436413/pexels-photo-436413.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+            alt="img">
+        </div>
+        <div class="h-100 img-wrapper ml-1">
+          <img class="h-100 rounded"
+            src="https://images.pexels.com/photos/436413/pexels-photo-436413.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+            alt="img">
+        </div>
+
+
+
+      </div>
+      <div class="next">
+        <i class="fas fa-chevron-right"></i>
+      </div>
+    </section>
+
+  </main>
+
+
+  <!-- ==========================Footer========================= -->
+  <footer class="container font-small ">
+    <div class="icons">
+      <i class="fab fa-facebook-f"></i>
+      <i class="fab fa-instagram-square ml-4"></i>
+      <i class="fab fa-twitter-square ml-4"></i>
+      <i class="fab fa-youtube ml-4"></i>
+    </div>
+    <section class="row mb-3">
+      <div class="col-sm-12 col-md-6 col-lg-3">
+        <ul class="list-unstyled list-inline">
+          <li>Audio and Subtities</li>
+          <li>Media Center</li>
+          <li>Privacy</li>
+          <li>Contact Us</li>
+        </ul>
+      </div>
+      <div class="col-sm-12 col-md-6 col-lg-3 ">
+        <ul class="list-unstyled list-inline">
+          <li>Audio Description</li>
+          <li>Investors Relations</li>
+          <li>Legal Notices</li>
+        </ul>
+      </div>
+      <div class="col-sm-12 col-md-6 col-lg-3">
+        <ul class="list-unstyled list-inline">
+          <li>Help Center</li>
+          <li>Jobs</li>
+          <li>Cookies Preferences</li>
+        </ul>
+      </div>
+      <div class="col-sm-12 col-md-6 col-lg-3">
+        <ul class="list-unstyled list-inline">
+          <li>Gift Cards</li>
+          <li>Terms Of use</li>
+          <li>Privacy</li>
+        </ul>
+      </div>
+    </section>
+    <div class="border d-inline p-2 border-secondary">
+      Service Cookie
+    </div>
+    <p class="mt-3">&#169; 1997-2020 Netflex, Inc. (i-sd8969sd66fs9d566) </p>
+  </footer>
+
+  <script src="./index.js"> </script>
+  <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

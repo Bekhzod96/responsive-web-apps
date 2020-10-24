@@ -1,0 +1,194 @@
+/* COLOURS
+
+OFF BLACK - #080808
+OFF WHITE - #f3f3f3
+GREY - #dfdfdf
+LIGHT GREY - #9f9e9c
+DARK GREY - #322e2d
+BLUE - #3d70bf
+RED - #e01214
+BODY - #141414
+FOOTER GREY - #818181
+
+*/
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Open Sans", sans-serif;
+}
+
+a {
+  color: #c2c2c2;
+}
+
+a:hover {
+  color: #f3f3f3;
+}
+
+/* NAVBAR STYLING */
+
+.navbar {
+  height: 58px;
+}
+
+.darkGreyBG {
+  background-color: #080808;
+}
+
+.offWhiteTxt {
+  color: #f3f3f3;
+}
+
+.logo {
+  height: 34px;
+}
+
+.dropdown-menu {
+  background-color: #080808;
+  border-radius: 0px;
+  margin-left: -60px;
+}
+
+.dropdown-item {
+  color: #f3f3f3;
+  font-size: 12px;
+  line-height: 32px;
+}
+
+.dropdown-item:hover {
+  background-color: #080808;
+  color: #c2c2c2;
+  text-decoration: underline;
+}
+
+.nav-border-b {
+  border-bottom: 1px solid #322e2d;
+}
+
+.search-icon {
+  font-size: 20px;
+}
+
+#search-input {
+  padding: 8px 8px 8px 34px;
+  background-color: #080808;
+  border: 1px solid #322e2d;
+  outline: none;
+  color: #f3f3f3;
+}
+
+#search-input:focus {
+  border: 1px solid #f3f3f3;
+}
+
+.fa-search-input {
+  color: #f3f3f3;
+  position: absolute;
+  margin: 14px 0px 0px 10px;
+}
+
+#search-input::placeholder {
+  font-size: 14px;
+}
+
+.dropdown-container {
+  width: 180px;
+}
+
+#username {
+  font-size: 15px;
+  margin-top: 13px;
+}
+
+/* ACCOUNT PAGE STYLING */
+
+#account-info img {
+  width: 32px;
+}
+
+#account-info a {
+  color: #41aaff;
+  margin: 4px 0px;
+}
+
+#account-info h3 {
+  color: #999;
+  font-size: 1.4em;
+}
+
+#account-info p {
+  color: #999;
+}
+
+#account-info .main-row {
+  border-bottom: 1px solid #999;
+}
+
+#account-info .main-row-single {
+  border-bottom: 1px solid #999;
+  border-top: 1px solid #999;
+}
+
+#account-info .main-row-bold {
+  border-top: 1px solid #999;
+}
+
+#account-info input {
+  border-bottom: 1px solid #d1d1d1;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  padding: 12px 4em;
+  border-radius: 2px;
+  font-size: 13px;
+  min-width: 98px;
+  min-height: 37px;
+}
+
+#account-info input:hover {
+  background-color: #f3f3f3;
+}
+
+#account-info .border-span {
+  border: 2px solid #212529;
+  border-radius: 6px;
+  padding: 0px 4px;
+  margin-left: 5px;
+}
+
+#account-info .full {
+  min-width: 100%;
+}
+
+.alt-font {
+  font-family: Verdana, Geneva, Tahoma, sans-serif !important;
+  font-weight: bolder;
+  font-style: italic;
+  font-size: 14px;
+}
+
+.d-none-i {
+  display: none !important;
+}
+
+.modal-header {
+  background-color: #080808;
+  color: #f3f3f3;
+  border: none;
+}
+
+.modal-body {
+  background-color: #322e2d;
+  color: #c2c2c2;
+  border: none;
+}
+
+.modal-footer {
+  background-color: #322e2d;
+  border: none;
+}
+
+.modal-header .close {
+  color: #fff;
+}

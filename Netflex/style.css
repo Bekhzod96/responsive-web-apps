@@ -1,0 +1,225 @@
+
+@font-face {
+  font-family:'Netflix Sans';
+  font-weight:100;
+  font-display:optional;
+  src:url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Th.woff2) format('woff2'),
+  url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Th.woff) format('woff')
+ }
+ @font-face {
+  font-family:'Netflix Sans';
+  font-weight:300;
+  font-display:optional;
+  src:url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Lt.woff2) format('woff2'),
+  url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Lt.woff) format('woff')
+ }
+ @font-face {
+  font-family:'Netflix Sans';
+  font-weight:400;
+  font-display:optional;
+  src:url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Rg.woff2) format('woff2'),
+  url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Rg.woff) format('woff')
+ }
+ @font-face {
+  font-family:'Netflix Sans';
+  font-weight:700;
+  font-display:optional;
+  src:url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Md.woff2) format('woff2'),
+  url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Md.woff) format('woff')
+ }
+ @font-face {
+  font-family:'Netflix Sans';
+  font-weight:800;
+  font-display:optional;
+  src:url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Bd.woff2) format('woff2'),
+  url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Bd.woff) format('woff')
+ }
+ @font-face {
+  font-family:'Netflix Sans';
+  font-weight:900;
+  font-display:optional;
+  src:url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Blk.woff2) format('woff2'),
+  url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Blk.woff) format('woff')
+ }
+:root {
+  --bg-color: #141414;
+  --footer-color: #818181;
+  --text-color: #f3f3f3
+}
+
+
+ *, 
+ ::after,
+ ::before {
+   padding: 0;
+   margin: 0;
+   box-sizing: border-box;
+ }
+
+ body{
+  background: var(--bg-color);
+  font-family:"Open Sans", sans-serif;
+   width: 100%;
+ }
+
+ main{
+   margin: 0.5rem 6rem;
+   color: var(--text-color);
+ }
+
+ .movie-section{
+  height: 300px;
+  position: relative;
+  
+ }
+
+ h2{
+  color: #dfdfdf;
+  font-family:Netflix Sans;
+  font-weight: 600;
+ }
+ .movie-section div {
+   height: 80%;
+   
+ }
+footer {
+  margin-top: 200px;
+}
+ footer ul li, p, footer .border{
+   color: var(--footer-color)!important;
+   font-weight: 600;
+   line-height: 50px;
+ }
+
+ .icons i{
+  font-size: 40px;
+  margin-bottom: 20px;
+  color: var(--footer-color);
+ }
+
+.img-row{
+  overflow: scroll;
+  position: relative;
+  overflow-y: hidden;
+ 
+}
+
+.smooth {
+  transition: transform  0.3s ease-out;
+}
+.move{
+  transform: translateX(-350px);
+  transition: transform 0.5s ease-out; 
+}
+
+::-webkit-scrollbar {
+  width: 0px;
+  background: transparent;
+}
+
+.next{
+  position: absolute;
+  cursor: pointer;
+  height: 74%!important;
+  display: flex;
+  width: 200px;
+  align-items: center;
+  justify-content: flex-end;
+  padding-right: 15px;
+  font-size: 52px;
+  color: rgba(255,255,255,0.2);
+  bottom: 25px;
+  background: linear-gradient(90deg, rgba(0,0,0,0.1)  25%, rgba(255,255,255,0.1) 100%);
+  right: -55px;
+}
+
+.next:active{
+  color: #dfdfdf;
+  /* transform: translateX(15px); */
+}
+
+ .img-wrapper:hover {
+  cursor: pointer;
+  /* transform: scale(1.1); */
+ }
+
+
+ /* ========== NavBar Style ===========*/
+ a {
+  color: #c2c2c2;
+}
+
+a:hover {
+  color: #f3f3f3;
+}
+
+.navbar {
+  height: 58px;
+}
+
+
+.offWhiteTxt {
+  color: #f3f3f3;
+}
+
+.logo {
+  height: 34px;
+}
+
+.dropdown-menu {
+  background-color: #080808;
+  border-radius: 0px;
+  margin-left: -60px;
+}
+
+.dropdown-item {
+  color: #f3f3f3;
+  font-size: 12px;
+  line-height: 32px;
+}
+
+.dropdown-item:hover {
+  background-color: #080808;
+  color: #c2c2c2;
+  text-decoration: underline;
+}
+
+.nav-border-b {
+  border-bottom: 1px solid #322e2d;
+}
+
+.search-icon {
+  font-size: 20px;
+}
+
+#search-input {
+  padding: 8px 8px 8px 34px;
+  background-color: #080808;
+  border: 1px solid #322e2d;
+  outline: none;
+  color: #f3f3f3;
+}
+
+#search-input:focus {
+  border: 1px solid #f3f3f3;
+}
+
+.fa-search-input {
+  color: #f3f3f3;
+  position: absolute;
+  margin: 14px 0px 0px 10px;
+}
+
+#search-input::placeholder {
+  font-size: 14px;
+}
+
+.dropdown-container {
+  width: 180px;
+}
+
+@media only screen and (max-width: 762px) {
+  footer {
+    text-align: center;
+  }
+}
